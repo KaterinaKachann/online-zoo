@@ -14,7 +14,7 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
   },
-  "name": "katerinakachann-jsfe2022q3",
+  "name": "online-zoo",
   "description": "Private repository for @katerinakachann",
   "version": "1.0.0",
   "main": "index.js",
@@ -25,16 +25,6 @@
     "watch": "webpack --watch",
     "deploy": "npm run build && npx gh-pages -d dist -e online-zoo"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rolling-scopes-school/katerinakachann-JSFE2022Q3.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rolling-scopes-school/katerinakachann-JSFE2022Q3/issues"
-  },
-  "homepage": "https://github.com/rolling-scopes-school/katerinakachann-JSFE2022Q3#readme",
   "dependencies": {
     "autoprefixer": "10.4.5",
     "normalize-scss": "^7.0.1",
