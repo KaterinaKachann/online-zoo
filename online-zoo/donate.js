@@ -1,0 +1,1 @@
+import"./style.scss";import"./normalize.css";var inputAnother=document.querySelector(".another-amount-input");inputAnother.oninput=function(){this.value.length>4&&(this.value=this.value.slice(0,4))};
