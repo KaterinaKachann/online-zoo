@@ -1,4 +1,4 @@
-import './style.scss';
+// import './style.scss';
 import './normalize.css';
 
 const inputAnother = document.querySelector('.another-amount-input');
