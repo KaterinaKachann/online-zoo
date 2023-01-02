@@ -225,6 +225,7 @@
   position: absolute;
   top: 25px;
   right: 15px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .header .menu_burger-open .menu__item {
@@ -317,7 +318,7 @@ menu {
 @media (max-width: 768px) {
   .menu__burger-icon {
     display: block;
-    background-image: url("../../assets/icons/burger-menu.svg");
+    background-image: url("./assets/icon/burger-menu.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 18px;
@@ -373,18 +374,9 @@ menu {
     font-weight: normal;
   }
 }
-.menu__link::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  left: 0;
-  top: 110%;
-  height: 2px;
-  background-image: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
-  transition: width 0.3s ease 0s;
-}
-.menu__link:hover::after {
-  width: 100%;
+
+.menu__link:hover{
+  color: #f9804b;
 }
 
 .menu__link_activ {
@@ -1581,13 +1573,13 @@ menu {
 .section-3 .widjets__elem .widjets__arrow {
   width: 71px;
   height: 37px;
-  background-image: url(../../assets/icons/arrow-right-big.svg);
+  background-image: url(./assets/icon/arrow.svg);
   background-repeat: no-repeat;
   margin: 60px 0 0 0;
 }
 @media (max-width: 999px) {
   .section-3 .widjets__elem .widjets__arrow {
-    background-image: url(../../assets/icons/arrow-green.svg);
+    background-image: url(./assets/icon/arrow-mobile.svg);
     position: absolute;
     top: -77px;
     left: -53px;

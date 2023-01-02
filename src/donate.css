@@ -301,7 +301,7 @@
   @media (max-width: 768px) {
     .menu__burger-icon {
       display: block;
-      background-image: url("../../assets/icons/burger-menu.svg");
+      background-image: url("./assets/icon/burger-menu.svg");
       background-size: contain;
       background-repeat: no-repeat;
       width: 18px;
@@ -356,18 +356,8 @@
       font-weight: normal;
     }
   }
-  .menu__link::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    left: 0;
-    top: 110%;
-    height: 2px;
-    background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    transition: width 0.3s ease 0s;
-  }
-  .menu__link:hover::after {
-    width: 100%;
+  .menu__link:hover {
+    color: #F9804B;
   }
   
   .menu__link_activ {
