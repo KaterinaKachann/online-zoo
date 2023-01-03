@@ -1,6 +1,3 @@
-// import './style.scss';
-// import './normalize.css';
-
 const burgerIcon = document.querySelector(".menu__burger-icon");
 const menu = burgerIcon.parentElement.childNodes[3];
 const body = document.querySelector("body");
