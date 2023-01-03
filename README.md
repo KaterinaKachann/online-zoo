@@ -1,5 +1,5 @@
 
-ONLINE ZOO is a platform that contains information about animals from various zoos with webcams.
+Online Zoo is a platform that contains information about animals from various zoos with webcams.
 =================================================
 ![JavaScript](https://img.shields.io/badge/javascript-%23007ACC.svg?style=for-the-badge&logo=javascript&logoColor=white)
 
@@ -14,6 +14,6 @@ It is assumed that a user can open the page with zoo resources, observe one of t
 Author and history
 ---------------------------
 
-The task was completed within the Rsschool.
+The task was completed within the RSSchool.
 
 * [KaterinaKachann  [Frontend developer (HTML, CSS, JS)]](https://github.com/KaterinaKachann)
