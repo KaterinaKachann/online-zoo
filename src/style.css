@@ -1050,61 +1050,32 @@ menu {
   }
 }
 
-.card__tooltip {
-  opacity: 0;
-  pointer-events: none;
-  width: 260px;
-  min-height: 109px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  position: absolute;
-  bottom: 80px;
-  left: 10px;
-  padding: 16px 0 0 20px;
-  border: 1px solid black;
-  z-index: 10;
-}
-.card__tooltip::before {
-  content: "";
-  width: 10px;
-  height: 17px;
-  position: absolute;
-  top: -2px;
-  right: 40%;
-  background-color: white;
-  border: 1px solid black;
-  transform: matrix(0.7, 1.32, -0.38, 0.75, -29, -7.8);
-  border-bottom: none;
-  border-right: none;
-}
-.card__tooltip .tooltip__text {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 140%;
-  color: #000000;
-  margin: 0 0 11px 0;
-}
-.card__tooltip .tooltip__btn {
-  width: 135.75px;
-  height: 31px;
-  border-radius: 5px;
-  background-color: #f1f3f2;
-  transition: all 0.3s ease 0s;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 140%;
-  color: #4b9200;
-  border: none;
-  cursor: pointer;
-  margin: 0 0 15px 0;
-}
-.card__tooltip .tooltip__btn:hover {
-  background-color: #dadddc;
-}
-.card__tooltip .tooltip__btn:active {
-  background-color: #e47209;
-}
+.card-float-text {
+  background: rgba(0, 0, 0, 0.7);
 
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  bottom: -107%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition-property: bottom;
+  transition-duration: 0.7s; 
+}
+.card-title {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #dadddc;
+}
+.card-subtitle {
+  font-weight: 300;
+  font-size: 15px;
+  color: #dadddc;
+}
 .cards__card_hidden {
   display: none;
 }
@@ -1121,20 +1092,18 @@ menu {
   cursor: pointer;
 }
 .cards__card:hover img:first-child {
-  transform: scale(1.08);
+  transform: scale(1.4);
   transition: transform 0.4s ease 0s;
   z-index: 0;
-}
-.cards__card:hover .card__tooltip {
-  display: block;
-  pointer-events: all;
-  opacity: 1;
-  bottom: 10px;
-  transition: all 0.5s ease 0s;
-  box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  position: relative;
+  
 }
 .cards__card:hover .card__footer {
   display: none;
+}
+.cards__card:hover .card-float-text {
+  position: absolute;
+  bottom: 0;
 }
 @media (max-width: 1400px) {
   .cards__card {
